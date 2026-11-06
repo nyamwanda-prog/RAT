@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Exercise - Both Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #5b9bd5;
+            border-radius: 4px;
+        }
+        nav a:hover {
+            background-color: #1f4e79;
+        }
+
+        
+        table.q1-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        table.q1-table th, table.q1-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        table.q1-table th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        
+        .form-container {
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        legend {
+            font-weight: bold;
+            text-align: center;
+        }
+        table.q2-table {
+            width: 100%;
+        }
+        table.q2-table td {
+            padding: 5px;
+        }
+        .label-col {
+            width: 40%;
+            text-align: right;
+            vertical-align: top;
+        }
+        .input-col {
+            width: 60%;
+        }
+        input[type="text"], input[type="password"], select {
+            width: 200px;
+            padding: 3px;
+            border: 1px solid #a9c6e6;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        .btn {
+            background-color: #5b9bd5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #1f4e79;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#" onclick="showSection('q1')">Question 1 - Table</a>
+        <a href="#" onclick="showSection('q2')">Question 2 - Form</a>
+    </nav>
+
+    <!-- ================= QUESTION 1 ================= -->
+    <div id="q1" class="section active">
+        <h2>Lab Exercise</h2>
+        <h3>1. Consider the table below</h3>
+
+        <table class="q1-table">
+            <tr>
+                <th colspan="3">My tech stock pick</th>
+            </tr>
+            <tr>
+                <th>Symbol</th>
+                <th>ContactName</th>
+                <th>Images</th>
+            </tr>
+            <tr>
+                <td>Microsoft</td>
+                <td>iMSFT</td>
+                <td>
+                    • Email: microsofti@mc.se<br>
+                    • ©2013 Microsoft Corporation<br>
+                    <ol type="i" style="margin: 0; padding-left: 20px;">
+                        <li>Email: microsofti@mc.se</li>
+                        <li>©2026 Microsoft Corporation</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>Cisco Systems</td>
+                <td>CSCO</td>
+                <td>
+                    Switch<br>
+                    www.uk.hardware.info
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">©BIT 202</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ================= QUESTION 2 ================= -->
+    <div id="q2" class="section">
+        <div class="form-container">
+            <h3 style="color: #5b9bd5; margin-bottom: 5px;">Step 1 of 5</h3>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <table class="q2-table">
+                    <tr>
+                        <td class="label-col">Sur Name</td>
+                        <td class="input-col"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">First Name</td>
+                        <td class="input-col"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">Other Names</td>
+                        <td class="input-col"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">Gender</td>
+                        <td class="input-col">
+                            <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">Marital Status</td>
+                        <td class="input-col">
+                            <select>
+                                <option>Select - Status</option>
+                                <option>Single</option>
+                                <option>Married</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">Date of Birth</td>
+                        <td class="input-col"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">Place of Birth</td>
+                        <td class="input-col"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">Mothers Name</td>
+                        <td class="input-col"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">fathers Name</td>
+                        <td class="input-col"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">number of Dependants</td>
+                        <td class="input-col">
+                            <select>
+                                <option>Select - No of Dependants</option>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">level of Education</td>
+                        <td class="input-col"><input type="text"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Security Information</legend>
+                <table class="q2-table">
+                    <tr>
+                        <td class="label-col">UserName</td>
+                        <td class="input-col"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">Password</td>
+                        <td class="input-col"><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">Re-type Password</td>
+                        <td class="input-col"><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">Security Question</td>
+                        <td class="input-col">
+                            <select>
+                                <option>Select - Question</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">Answer</td>
+                        <td class="input-col"><input type="text"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <div class="buttons">
+                <button class="btn">Previous</button>
+                <button class="btn">Next</button>
+            </div>
+
+            <div class="footer">
+                Copyright © 2011 all rights reserved
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        function showSection(id) {
+            
+            var sections = document.querySelectorAll('.section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('active');
+            }
+            
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
