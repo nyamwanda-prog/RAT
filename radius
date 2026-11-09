@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#define PI 3.14159   // PI defined as a constant
+
+int main()
+{
+    float radius, area, perimeter;
+
+    // Prompt the user to enter the radius
+    printf("Enter the radius of the circle: ");
+    scanf("%f", &radius);
+
+    // Calculate area and perimeter
+    area = PI * radius * radius;        // Area = πr²
+    perimeter = 2 * PI * radius;        // Perimeter (Circumference) = 2πr
+
+    // Display the results
+    printf("\n--- Results ---\n");
+    printf("Radius      : %.2f\n", radius);
+    printf("Area        : %.2f\n", area);
+    printf("Perimeter   : %.2f\n", perimeter);
+
+    return 0;
+}
